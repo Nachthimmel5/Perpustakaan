@@ -1,0 +1,33 @@
+Install dependency
+composer install
+
+Jika error versi paket seperti kemarin, langsung pakai cara cepat ini
+del composer.lock
+rmdir /s /q vendor
+composer install
+
+Setelah vendor muncul
+php artisan
+
+
+Itu penyebab utamanya.
+Laravel WAJIB punya file .env.
+
+Langkah cepat dan benar.
+
+Buat file .env dari contoh
+Di folder library-app, jalankan.
+copy .env.example .env
+
+Pastikan file .env ada
+Di folder project, cek ada file .env.
+
+Generate APP_KEY
+Jalankan.
+php artisan key:generate
+
+Buat migration tabel sessions
+php artisan session:table
+
+Jalankan migrate
+php artisan migrate
